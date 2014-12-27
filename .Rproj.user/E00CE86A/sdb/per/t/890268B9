@@ -1,0 +1,17 @@
+{
+    "contents" : "pollutantmean1 <- function(directory, pollutant, id = 1:332){\n    result <- 0\n    n <- length(id)\n    for ( i in id ){\n        file = paste(getwd(),\"/\",directory, \"/\", formatC(i, width = 3, flag = \"0\"), \".csv\", sep = \"\")\n        data = read.csv(file)[[pollutant]]\n        result <- result + mean(unlist(data), na.rm = TRUE)\n    }\n    return(result/n)\n}",
+    "created" : 1418318658770.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3209785031",
+    "id" : "890268B9",
+    "lastKnownWriteTime" : 1418319473,
+    "path" : "/home/data/dev/R/coursera/prueba.R",
+    "project_path" : "prueba.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

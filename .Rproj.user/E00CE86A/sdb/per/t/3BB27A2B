@@ -1,0 +1,16 @@
+{
+    "contents" : "pollutantmean <- function(directory, pollutant, id = 1:332){\n    data = lapply(id, function(i) read.csv(paste(getwd(),\"/\",directory, \"/\", formatC(i, width = 3, flag = \"0\"), \".csv\", sep = \"\"))[[pollutant]])\n    return(mean(unlist(data), na.rm = TRUE))\n}\n",
+    "created" : 1418318678305.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "860792177",
+    "id" : "3BB27A2B",
+    "lastKnownWriteTime" : 1418184752,
+    "path" : "/home/data/dev/R/coursera/pollutantmean.R",
+    "project_path" : "pollutantmean.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
